@@ -2,10 +2,37 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Google AI Studio App</title>
-    <script type="module" crossorigin src="/koylip/assets/index-BF0Yu4DK.js"></script>
-    <link rel="stylesheet" crossorigin href="/koylip/assets/index-DGIxlz_p.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>ขลุ่ยหลิบเสมือนจริง - Virtual Thai Khlui Lib</title>
+    <meta name="description" content="แอปขลุ่ยหลิบเสมือนจริง เสียงสมจริง ความหน่วงต่ำพิเศษ รองรับการสัมผัสและแต่งเพลงสำหรับมือถือ" />
+    <meta property="og:title" content="ขลุ่ยหลิบเสมือนจริง - Virtual Thai Khlui Lib" />
+    <meta property="og:description" content="แอปขลุ่ยหลิบเสมือนจริง เสียงสมจริง ความหน่วงต่ำพิเศษ รองรับการสัมผัสและแต่งเพลงสำหรับมือถือ" />
+    <script>
+      (function() {
+        try {
+          var originalFetch = window.fetch;
+          if (typeof originalFetch === 'function') {
+            var activeFetch = originalFetch.bind(window);
+            var descriptor = {
+              get: function() { return activeFetch; },
+              set: function(val) { activeFetch = val; },
+              configurable: true,
+              enumerable: true
+            };
+            try {
+              Object.defineProperty(window, 'fetch', descriptor);
+            } catch (_) {}
+            if (typeof Window !== 'undefined' && Window.prototype) {
+              try {
+                Object.defineProperty(Window.prototype, 'fetch', descriptor);
+              } catch (_) {}
+            }
+          }
+        } catch (_) {}
+      })();
+    </script>
+    <script type="module" crossorigin src="/assets/index-sPd-Rza5.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-D5MpO_3C.css">
   </head>
   <body>
     <div id="root"></div>
